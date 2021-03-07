@@ -215,7 +215,7 @@
 .v5_0 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 190px;
@@ -231,7 +231,7 @@
 .v5_1 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 230px;
@@ -246,7 +246,7 @@
 .v5_2 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 270px;
@@ -324,7 +324,7 @@
 .v23_2 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 310px;
@@ -339,7 +339,7 @@
 .v23_3 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 350px;
@@ -354,7 +354,7 @@
 .v23_4 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 390px;
@@ -369,7 +369,7 @@
 .v23_5 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 430px;
@@ -384,7 +384,7 @@
 .v23_6 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 470px;
@@ -399,7 +399,7 @@
 .v23_7 {
   width: 335px;
   height: 30px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1)));
   opacity: 1;
   position: absolute;
   top: 510px;
@@ -435,7 +435,7 @@
 .v28_0 {
   width: 159px;
   height: 64px;
-  background: linear-gradient(rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(rgba(31,64,55,1), rgba(31,64,55,1));
   opacity: 1;
   position: absolute;
   top: 557px;
