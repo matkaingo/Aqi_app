@@ -262,14 +262,14 @@
 .v14_0 {
   width: 335px;
   height: 222px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   
   position: absolute;
   top: 169px;
   left: 12px;
   border-radius: 10px;
   overflow: hidden;
-  opacity: 75%;
+  opacity: 65%;
 }
 
 .v54_0 {
@@ -287,14 +287,14 @@
 .v52_14 {
   width: 335px;
   height: 317px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   
   position: absolute;
   top: 405px;
   left: 12px;
   border-radius: 10px;
   overflow: hidden;
-  opacity: 85%;
+  opacity: 65%;
 }
 .v53_291 {
   width: 245px;
@@ -1195,8 +1195,8 @@ top: 461px;
 .v40_3 {
   width: 335px;
   height: 330px;
-  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
-  opacity: 85%;
+  background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
+  opacity: 65%;
   position: absolute;
   top: 29px;
   left: 12px;
