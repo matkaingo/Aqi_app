@@ -53,7 +53,7 @@ def construirGrillaEnCiertaFecha(dia, mes, anio, hora):
 # Punto 2
 def graficarHistorial(coordenadaX, coordenadaY):
     plt.figure('Historial Completo') 
-    for i in range(100):
+    for i in range(tam):
         m = []
         for j in range(21):
             m.append(customers_json.datos[j][i].get('valor'))
