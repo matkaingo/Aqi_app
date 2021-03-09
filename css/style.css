@@ -1682,3 +1682,87 @@ bottom: 8.52%;
   text-align: left;
 }
 
+.v59_2 {
+  width: 360px;
+  height: 640px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v60_0 {
+  width: 360px;
+  height: 640px;
+  background: url("img/back1");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.v60_2 {
+  width: 301px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 168px;
+  left: 33px;
+  font-family: Helvetica;
+  font-weight: Regular;
+  font-size: 18px;
+  opacity: 1;
+  text-align: left;
+}
+.v60_1 {
+  width: 259px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 79px;
+  left: 51px;
+  font-family: Helvetica;
+  font-weight: Bold;
+  font-size: 24px;
+  opacity: 1;
+  text-align: left;
+}
+.v60_3 {
+  width: 56px;
+  color: rgba(255,255,255,1);
+  position: absolute;
+  top: 608px;
+  left: 254px;
+  font-family: Helvetica;
+  font-weight: Regular;
+  font-size: 14px;
+  opacity: 1;
+  text-align: left;
+}
+.v60_6 {
+  width: 16px;
+  height: 8px;
+  
+  position: absolute;
+  top: 612px;
+  left: 318px;
+}
+
+.continua{
+  position: absolute;
+width: 106px;
+height: 25px;
+left: 245px;
+top: 599px;
+}
+.framearrow{
+  position: absolute;
+  width: 109px;
+  height: 54px;
+  left: 160px;
+  top: 578px;
+}
+
