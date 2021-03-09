@@ -52,24 +52,23 @@ def construirGrillaEnCiertaFecha(dia, mes, anio, hora):
 
 # Punto 2
 def graficarHistorial(coordenadaX, coordenadaY):
-    plt.figure('Historial Completo') 
-    for i in range(100):
+    #plt.figure('Historial Completo') 
+    for i in range(100):#cantidad de datos que se quiere
         m = []
         for j in range(21):
             m.append(customers_json.datos[j][i].get('valor'))
     
         m = np.array(m)
-        fecha = customers_json.datos[1][i].get('fecha')
+        #fecha = customers_json.datos[1][i].get('fecha')
         grid_z2 = griddata((latitudes, longitudes), m, (coordenadaY, coordenadaX), method='cubic')
-        plt.xticks(rotation=90)
+        #plt.xticks(rotation=90)
         
         if grid_z2 > 0 and grid_z2 < 150:
-            plt.plot(fecha, grid_z2, 'r.', ms=5)
+            #plt.plot(fecha, grid_z2, 'r.', ms=5)
             print(grid_z2)
-    titulo = 'Lon: ' + str(coordenadaX) + ' Lat: ' + str(coordenadaY)
-    
-    plt.title(titulo)
-    plt.show()
+    #titulo = 'Lon: ' + str(coordenadaX) + ' Lat: ' + str(coordenadaY)
+    #plt.title(titulo)
+    #plt.show()
 
 # Punto 2
 def graficarFechaEnCoordenadaXY(coordenadaX, coordenadaY, dia, mes, anio, hora):
