@@ -124,7 +124,7 @@ def animacion():
 # Punto 1
 construirGrillaEnCiertaFecha('21', '02', '2020', '04')
 # Punto 2
-graficarHistorial(miX, miY) # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
+#graficarHistorial(miX, miY) # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
 graficarFechaEnCoordenadaXY(miX, miY, '21', '02', '2020', '04')
 # Punto 5
 #animacion()
