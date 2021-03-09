@@ -1,6 +1,7 @@
-var splash, mainPage, mainPage2,contact,tutorial;
+var splash, mainPage, mainPage2,contact,tutorial,tutorial1,tutorial2,tutorial;
 var section;
-var ret, ret1, ret2, retbackup;
+var ret, ret1, ret2, ret3, ret4, ret5, retbackup;
+var next, next1, next2, next3;
 var btn, btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10, btn11;
 var cantidad;
 var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
@@ -28,7 +29,10 @@ function crearReferencias(){
 	mainPage2 = document.getElementById("mainPage2");
 	contacto = document.getElementById("contact");
 	tutorial = document.getElementById("tutorial");
-	section = [splash,mainPage,mainPage2,contacto,tutorial];
+	tutorial1 = document.getElementById("tutorial1");
+	tutorial2 = document.getElementById("tutorial1");
+	tutorial3 = document.getElementById("tutorial1");
+	section = [splash,mainPage,mainPage2,contacto,tutorial,tutorial1,tutorial2,tutorial3];
 	btn  = document.getElementById("btn");
 	btn1  = document.getElementById("btn1");
 	btn2 = document.getElementById("btn2");
@@ -44,6 +48,15 @@ function crearReferencias(){
 	ret  = document.getElementById("ret");
 	ret1  = document.getElementById("ret1");
 	ret2  = document.getElementById("ret2");
+	ret3  = document.getElementById("ret3");
+	ret4  = document.getElementById("ret4");
+	ret5  = document.getElementById("ret5");
+	next  = document.getElementById("next");
+	next1  = document.getElementById("next1");
+	next2  = document.getElementById("next2");
+	next3  = document.getElementById("next3");
+
+
 }
 function goTo(sec){
 	document.body.style.backgroundImage = "url('img/background.jpeg')";
@@ -84,6 +97,13 @@ function addevent()
 	ret.addEventListener("click", ()=>{goTo(mainPage);});
 	ret1.addEventListener("click", ()=>{goTo(mainPage);});
 	ret2.addEventListener("click", ()=>{goTo(mainPage);});
+	ret3.addEventListener("click", ()=>{goTo(mainPage);});
+	ret4.addEventListener("click", ()=>{goTo(mainPage);});
+	ret5.addEventListener("click", ()=>{goTo(mainPage);});
+	next.addEventListener("click", ()=>{goTo(tutorial1);}); 
+	next1.addEventListener("click", ()=>{goTo(tutorial2);}); 
+	next2.addEventListener("click", ()=>{goTo(tutorial3);}); 
+	next3.addEventListener("click", ()=>{goTo(tutorial);}); 
 }
 
 function change(){
