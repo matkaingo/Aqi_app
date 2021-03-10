@@ -29,29 +29,7 @@ for i in range(tam):
 def fechavscontaminacion(dia, mes, anio, hora):
     return fecha.index(anio+'-'+mes+'-'+dia+' '+hora+':00:00')
 
-# Punto 1
-def construirGrillaEnCiertaFecha(dia, mes, anio, hora):
-    plt.figure('Grilla')
-    m = []
-    p = fechavscontaminacion(dia, mes, anio, hora)
-    for j in range(21):
-        m.append(customers_json.datos[j][p].get('valor'))
-    m = np.array(m)
-    grid_z0 = griddata((latitudes, longitudes), m, (grid_y, grid_x), method='nearest')
-    grid_z2 = griddata((latitudes, longitudes), m, (grid_y, grid_x), method='cubic')
-    
-    #Interpolacion
-    for x in range(len(grid_z0)):
-        for y in range(len(grid_z0)):
-            if np.isnan(grid_z2[x,y]):
-                grid_z2[x,y]=grid_z0[x,y]
-    
-    #Graficacion
-    plt.contourf(grid_x, grid_y, grid_z2)
-    plt.title(fecha[p])
-    plt.show()
 
-# Punto 2
 def graficarHistorial(coordenadaX, coordenadaY):
     #plt.figure('Historial Completo') 
     for i in range(100):#cantidad de datos que se quiere
