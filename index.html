@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        
+        <script type="text/javascript" src="js/dist/Chart.js"></script>
         
    </head>
 <body>
@@ -38,15 +38,15 @@
                 <span class="cloud" >
                   <img src="img/green.png" id="nube"></img>
                 </span>
-                <span class="v2_14">Medellin, Antioquia</span>
+                <span class="v2_14" id="barrio1">Medellin, Antioquia</span>
 
-                <span class="v2_15">AQI</span>
+                <span class="v2_15" >AQI</span>
 
                 
               </div>
 
             </div>
-            <div class="v2_21" id="cantidad_aqi"><span class="v2_22">95</span></div>
+            <div class="v2_21" id="cantidad_aqi"><span class="v2_22" id="Aqi1">95</span></div>
          </div>
          <div class="v28_0" id="btn10">
             <span class="v28_2">Quienes Somos</span>
@@ -57,49 +57,49 @@
         </div>
          <a href="javascript:void(0);">
             <div class="v5_0" id="btn1">
-              <span class="v32_2">Conquistadores</span>
+              <span class="v32_2" id="barrio2">Conquistadores</span>
               <span class="v32_3">AQI</span>
-              <span class="v32_4">30</span>
+              <span class="v32_4" id="Aqi2">30</span>
             </div>
             <div class="v5_1" id="btn2">
-              <span class="v32_5">30</span>
+              <span class="v32_5" id="Aqi3">30</span>
               <span class="v32_13">AQI</span>
-              <span class="v32_21">Conquistadores</span>
+              <span class="v32_21" id="barrio3">Conquistadores</span>
             </div>
             <div class="v5_2" id="btn3">
-              <span class="v32_6">30</span>
+              <span class="v32_6" id="Aqi4">30</span>
               <span class="v32_14">AQI</span>
-              <span class="v32_22">Conquistadores</span>
+              <span class="v32_22" id="barrio4">Conquistadores</span>
             </div>
             <div class="v23_2" id="btn4">
-              <span class="v32_7">30</span>
+              <span class="v32_7" id="Aqi5">30</span>
               <span class="v32_15">AQI</span>
-              <span class="v32_23">Conquistadores</span>
+              <span class="v32_23" id="barrio5">Conquistadores</span>
             </div>
             <div class="v23_3" id="btn5">
-              <span class="v32_8">30</span>
+              <span class="v32_8" id="Aqi6">30</span>
               <span class="v32_16">AQI</span>
-              <span class="v32_24">Conquistadores</span>
+              <span class="v32_24" id="barrio6">Conquistadores</span>
             </div>
             <div class="v23_4" id="btn6">
-              <span class="v32_9">30</span>
+              <span class="v32_9" id="Aqi7">30</span>
               <span class="v32_17">AQI</span>
-              <span class="v32_25">Conquistadores</span>
+              <span class="v32_25" id="barrio7">Conquistadores</span>
             </div>
             <div class="v23_5" id="btn7">
-              <span class="v32_10">30</span>
+              <span class="v32_10" id="Aqi8">30</span>
               <span class="v32_18">AQI</span>
-              <span class="v32_26">Conquistadores</span>
+              <span class="v32_26" id="barrio8">Conquistadores</span>
             </div>
             <div class="v23_6" id="btn8">
-              <span class="v32_11">30</span>
+              <span class="v32_11" id="Aqi9">30</span>
               <span class="v32_19">AQI</span>
-              <span class="v32_27">Conquistadores</span>
+              <span class="v32_27" id="barrio9">Conquistadores</span>
             </div>
             <div class="v23_7" id="btn9">
-              <span class="v32_12">30</span>
+              <span class="v32_12" id="Aqi10">30</span>
               <span class="v32_20">AQI</span>
-              <span class="v32_28">Conquistadores</span>
+              <span class="v32_28" id="barrio10">Conquistadores</span>
             </div>
 
          </a>
@@ -126,7 +126,7 @@
               <span class="cloud" >
                 <img src="img/green.png" id="nube1"></img>
               </span>
-              <span class="v2_14">Medellin, Antioquia</span>
+              <span class="v2_14" id="barrio11">Medellin, Antioquia</span>
 
               <span class="v2_15">AQI</span>
 
@@ -134,12 +134,12 @@
             </div>
 
           </div>
-          <div class="v2_21" id="cantidad_aqi1"><span class="v2_22">103</span></div>
+          <div class="v2_21" id="cantidad_aqi1"><span class="v2_22" id="Aqi11">103</span></div>
        </div>
 
-        <div class="v14_0">
-          <span class="v54_0">Aqui va la grafica</span>
-        </div>
+        <canvas class="v14_0" id = "grafica">
+          
+        </canvas>
         <div class="v52_14">
           <span class="v53_291" id="mensaje"></span>
           <span class="v53_292" id="recomendacion"></span>
