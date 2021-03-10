@@ -14,13 +14,45 @@ tam = len(customers_json.datos[1])
 datos = {}
 datos['app'] = []
 datos['app'].append({
-    'nombre' : 'la america',
-    'Coordenadas' : [6.24989184652452, -75.61641254187703],
+    'Barrio' : 'UPB',
+    'Coordenadas' : [6.242637280603178, -75.58945342238027],
     'aqi'   : []}) 
 datos['app'].append({
-    'nombre' : 'Robledo',
-    'Coordenadas' : [6.266110119867184, -75.59954896793089],
-    'aqi'   : []})
+    'Barrio' : 'La America',
+    'Coordenadas' : [6.250081569077918, -75.61670894284408],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'Santa Monica',
+    'Coordenadas' : [6.248792644957115, -75.60899911732578],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'San Javier',
+    'Coordenadas' : [6.255813108611198, -75.61829808398893],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'Belén',
+    'Coordenadas' : [6.231531796377768, -75.59232027670221],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'La Mota',
+    'Coordenadas' : [6.210879176579839, -75.59774092474163],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'El Poblado',
+    'Coordenadas' : [6.203488762945017, -75.570242357202],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'Conquistadores',
+    'Coordenadas' : [6.242113476057693, -75.58124632873206],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'El Danubio',
+    'Coordenadas' : [6.255396824565169, -75.60699831045234],
+    'aqi'   : []}) 
+datos['app'].append({
+    'Barrio' : 'San Diego',
+    'Coordenadas' : [6.232445332769878, -75.56876073878705],
+    'aqi'   : []}) 
   
 
 def calcularAqi(pm25):
@@ -52,10 +84,8 @@ for dato in datos['app']:
         m = np.array(m)
         grid_z2 = griddata((latitudes, longitudes), m, (coor[0], coor[1]), method='cubic')
         
-        if grid_z2 > 0 and grid_z2 < 150:
-            dato['aqi'].append(calcularAqi(grid_z2))
-            print(calcularAqi(grid_z2))
-            print(grid_z2)
+        if grid_z2 > 0 and grid_z2 < 300:
+            dato['aqi'].append("{0:.2f}".format(calcularAqi(grid_z2)))
         else:
             i=i-1
             
