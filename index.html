@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        
+        <script type="text/javascript" src="js/dist/Chart.js"></script>
         
    </head>
 <body>
@@ -126,7 +126,7 @@
               <span class="cloud" >
                 <img src="img/green.png" id="nube1"></img>
               </span>
-              <span class="v2_14">Medellin, Antioquia</span>
+              <span class="v2_14" id="barrio11">Medellin, Antioquia</span>
 
               <span class="v2_15">AQI</span>
 
@@ -134,12 +134,12 @@
             </div>
 
           </div>
-          <div class="v2_21" id="cantidad_aqi1"><span class="v2_22">103</span></div>
+          <div class="v2_21" id="cantidad_aqi1"><span class="v2_22" id="Aqi11">103</span></div>
        </div>
 
-        <div class="v14_0">
-          <span class="v54_0">Aqui va la grafica</span>
-        </div>
+        <canvas class="v14_0" id = "grafica">
+          
+        </canvas>
         <div class="v52_14">
           <span class="v53_291" id="mensaje"></span>
           <span class="v53_292" id="recomendacion"></span>
