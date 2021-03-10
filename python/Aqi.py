@@ -15,26 +15,31 @@ datos = {}
 datos['app'] = []
 datos['app'].append({
     'nombre' : 'la america',
-    'Coordenadas' : [6.249534,-75.608652],
-    'aqi'   : []})   
+    'Coordenadas' : [6.24989184652452, -75.61641254187703],
+    'aqi'   : []}) 
+datos['app'].append({
+    'nombre' : 'Robledo',
+    'Coordenadas' : [6.266110119867184, -75.59954896793089],
+    'aqi'   : []})
+  
 
 def calcularAqi(pm25):
-    if pm25 > 0 and pm25 < 12:
+    if pm25 > 0 and pm25 <= 12:
         return(((50 - 0)/(12-0))*(pm25-0)+0)
         
-    elif pm25 > 12.1 and pm25 < 35.4:
+    elif pm25 > 12 and pm25 <= 35.4:
         return(((100 - 51)/(35.4-12.1))*(pm25-12.1)+51)
         
-    elif pm25 > 35.5 and pm25 < 55.4:
+    elif pm25 > 35.4 and pm25 <= 55.4:
         return(((150 - 101)/(55.4-35.5))*(pm25-35.5)+101)
         
-    elif pm25 > 55.5 and pm25 < 150.4:
+    elif pm25 > 55.4 and pm25 <= 150.4:
         return(((200 - 151)/(150.4-55.5))*(pm25-55.5)+151)
         
-    elif pm25 > 150.5 and pm25 < 250.4:
+    elif pm25 > 150.4 and pm25 <= 250.4:
         return(((300 - 201)/(250.4-150.5))*(pm25-150.5)+201)
         
-    elif pm25 > 250.5 and pm25 < 500.4:
+    elif pm25 > 250.4 and pm25 <= 500.4:
         return(((500 - 301)/(500-250.5))*(pm25-250.5)+301)
    
 for dato in datos['app']:
@@ -49,6 +54,8 @@ for dato in datos['app']:
         
         if grid_z2 > 0 and grid_z2 < 150:
             dato['aqi'].append(calcularAqi(grid_z2))
+            print(calcularAqi(grid_z2))
+            print(grid_z2)
         else:
             i=i-1
             
