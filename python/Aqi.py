@@ -23,13 +23,6 @@ fecha = []
 
 grid_x, grid_y = np.meshgrid(np.linspace(xmin,xmax,100), np.linspace(ymin,ymax,100))
 
-for i in range(tam):
-    fecha.append(customers_json.datos[1][i].get('fecha'))
-
-def fechavscontaminacion(dia, mes, anio, hora):
-    return fecha.index(anio+'-'+mes+'-'+dia+' '+hora+':00:00')
-
-
 def graficarHistorial(coordenadaX, coordenadaY):
     #plt.figure('Historial Completo') 
     for i in range(100):#cantidad de datos que se quiere
@@ -47,8 +40,6 @@ def graficarHistorial(coordenadaX, coordenadaY):
     #titulo = 'Lon: ' + str(coordenadaX) + ' Lat: ' + str(coordenadaY)
     #plt.title(titulo)
     #plt.show()
-
-
 
 graficarHistorial(miX, miY) # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
 
