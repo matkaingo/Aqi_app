@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy.interpolate import griddata
@@ -10,17 +9,11 @@ customers_json = pd.read_json(customer_json_file, convert_dates=True)
 latitudes = customers_json.latitud.values.tolist()
 longitudes = customers_json.longitud.values.tolist()
 
-ymin = min(latitudes)
-ymax = max(latitudes)
-xmin = min(longitudes)
-xmax = max(longitudes)
-
 miY = 6.249534 #Latitud de mi casa
 miX = -75.608652 #Longitud de mi casa
 
 tam = len(customers_json.datos[1])
 
-grid_x, grid_y = np.meshgrid(np.linspace(xmin,xmax,100), np.linspace(ymin,ymax,100))
 
 def graficarHistorial(coordenadaX, coordenadaY):
     #plt.figure('Historial Completo') 
@@ -36,6 +29,8 @@ def graficarHistorial(coordenadaX, coordenadaY):
         if grid_z2 > 0 and grid_z2 < 150:
             #plt.plot(fecha, grid_z2, 'r.', ms=5)
             print(grid_z2)
+        else:
+            i=i-1
     #titulo = 'Lon: ' + str(coordenadaX) + ' Lat: ' + str(coordenadaY)
     #plt.title(titulo)
     #plt.show()
