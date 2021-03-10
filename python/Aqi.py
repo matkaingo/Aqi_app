@@ -31,9 +31,7 @@ def graficarHistorial(coordenadaX, coordenadaY):
             print(calcularaqi(grid_z2))
         else:
             i=i-1
-    #titulo = 'Lon: ' + str(coordenadaX) + ' Lat: ' + str(coordenadaY)
-    #plt.title(titulo)
-    #plt.show()
+    
 
 def calcularaqi(pm25):
     if pm25 > 0 and pm25 < 12:
