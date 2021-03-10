@@ -9,9 +9,6 @@ customers_json = pd.read_json(customer_json_file, convert_dates=True)
 latitudes = customers_json.latitud.values.tolist()
 longitudes = customers_json.longitud.values.tolist()
 
-miY = 6.249534 #Latitud de mi casa
-miX = -75.608652 #Longitud de mi casa
-
 tam = len(customers_json.datos[1])
 
 datos = {}
@@ -54,5 +51,12 @@ for dato in datos['app']:
             dato['aqi'].append(calcularAqi(grid_z2))
         else:
             i=i-1
+            
+with open('appAqi.json', 'w') as file:
+    json.dump(datos, file)
+    
+with open('appAqi.json', 'r') as file:
+    data = json.load(file)
+    print(data)
  # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
 
