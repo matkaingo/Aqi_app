@@ -30,8 +30,8 @@ function crearReferencias(){
 	contacto = document.getElementById("contact");
 	tutorial = document.getElementById("tutorial");
 	tutorial1 = document.getElementById("tutorial1");
-	tutorial2 = document.getElementById("tutorial1");
-	tutorial3 = document.getElementById("tutorial1");
+	tutorial2 = document.getElementById("tutorial2");
+	tutorial3 = document.getElementById("tutorial3");
 	section = [splash,mainPage,mainPage2,contacto,tutorial,tutorial1,tutorial2,tutorial3];
 	btn  = document.getElementById("btn");
 	btn1  = document.getElementById("btn1");
@@ -51,6 +51,8 @@ function crearReferencias(){
 	ret3  = document.getElementById("ret3");
 	ret4  = document.getElementById("ret4");
 	ret5  = document.getElementById("ret5");
+	//ret6  = document.getElementById("ret3");
+	
 	next  = document.getElementById("next");
 	next1  = document.getElementById("next1");
 	next2  = document.getElementById("next2");
