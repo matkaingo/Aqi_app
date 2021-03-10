@@ -272,18 +272,7 @@
   opacity: 65%;
 }
 
-.v54_0 {
-  width: 285px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 36px;
-  left: 25px;
-  font-family: Helvetica;
-  font-weight: Regular;
-  font-size: 24px;
-  opacity: 1;
-  text-align: center;
-}
+
 .v52_14 {
   width: 335px;
   height: 317px;
@@ -590,11 +579,12 @@
   text-align: left;
 }
 .v32_4 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -603,11 +593,12 @@
 }
 
 .v32_5 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -640,11 +631,12 @@
 }
 
 .v32_6 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -677,11 +669,12 @@
 }
 
 .v32_7 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -714,11 +707,11 @@
 }
 
 .v32_8 {
-  width: 17px;
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -751,11 +744,12 @@
 }
 
 .v32_9 {
-  width: 17px;
+ 
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -788,11 +782,12 @@
 }
 
 .v32_10 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -825,11 +820,12 @@
 }
 
 .v32_11 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
@@ -862,11 +858,12 @@
 }
 
 .v32_12 {
-  width: 17px;
+  
   color: rgba(255,255,255,1);
   position: absolute;
   top: 8px;
-  left: 289px;
+  width: 25px;
+  left: 280px;
   font-family: Helvetica;
   font-weight: Regular;
   font-size: 14px;
