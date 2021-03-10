@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from scipy.interpolate import griddata
+import json 
 
 customer_json_file ='Datos_SIATA_Aire_pm25.json'
 customers_json = pd.read_json(customer_json_file, convert_dates=True)
@@ -128,4 +129,4 @@ construirGrillaEnCiertaFecha('21', '02', '2020', '04')
 graficarHistorial(miX, miY) # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
 graficarFechaEnCoordenadaXY(miX, miY, '21', '02', '2020', '04')
 # Punto 5
-#animacion()
+animacion()
