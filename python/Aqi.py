@@ -14,24 +14,14 @@ miX = -75.608652 #Longitud de mi casa
 
 tam = len(customers_json.datos[1])
 
+datos = {}
+datos['app'] = []
+datos['app'].append({
+    'nombre' : 'la america',
+    'Coordenadas' : [6.249534,-75.608652],
+    'aqi'   : []})   
 
-def graficarHistorial(coordenadaX, coordenadaY):
-    
-    for i in range(100):#cantidad de datos que se quiere
-        m = []
-        for j in range(21):
-            m.append(customers_json.datos[j][i].get('valor'))
-    
-        m = np.array(m)
-        grid_z2 = griddata((latitudes, longitudes), m, (coordenadaY, coordenadaX), method='cubic')
-        
-        if grid_z2 > 0 and grid_z2 < 300:
-            print(calcularaqi(grid_z2))
-        else:
-            i=i-1
-    
-
-def calcularaqi(pm25):
+def calcularAqi(pm25):
     if pm25 > 0 and pm25 < 12:
         return(((50 - 0)/(12-0))*(pm25-0)+0)
         
@@ -49,6 +39,20 @@ def calcularaqi(pm25):
         
     elif pm25 > 250.5 and pm25 < 500.4:
         return(((500 - 301)/(500-250.5))*(pm25-250.5)+301)
+   
+for dato in datos['app']:
+    for i in range(100):#cantidad de datos que se quiere
+        m = []
+        coor = dato['Coordenadas']
+        for j in range(21):
+            m.append(customers_json.datos[j][i].get('valor'))
     
-graficarHistorial(miX, miY) # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
+        m = np.array(m)
+        grid_z2 = griddata((latitudes, longitudes), m, (coor[0], coor[1]), method='cubic')
+        
+        if grid_z2 > 0 and grid_z2 < 150:
+            dato['aqi'].append(calcularAqi(grid_z2))
+        else:
+            i=i-1
+ # Descomentar para obtener todo el historial (Se demora MUUUUCHOOOOO)
 
