@@ -19,7 +19,6 @@ miY = 6.249534 #Latitud de mi casa
 miX = -75.608652 #Longitud de mi casa
 
 tam = len(customers_json.datos[1])
-fecha = []
 
 grid_x, grid_y = np.meshgrid(np.linspace(xmin,xmax,100), np.linspace(ymin,ymax,100))
 
