@@ -85,7 +85,7 @@ for dato in datos['app']:
         grid_z2 = griddata((latitudes, longitudes), m, (coor[0], coor[1]), method='cubic')
         
         if grid_z2 > 0 and grid_z2 < 300:
-            dato['aqi'].append("{0:.2f}".format(calcularAqi(grid_z2)))
+            dato['aqi'].append("{0:.0f}".format(calcularAqi(grid_z2)))
         else:
             i=i-1
             
