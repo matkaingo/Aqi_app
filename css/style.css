@@ -50,7 +50,7 @@
   background: linear-gradient(90deg,rgba(31,64,55,1), rgba(153,242,200,1));
   opacity: 1;
   position: absolute;
-  top: 12px;
+  top: 32px;
   left: 12px;
   border-radius: 10px;
   opacity: 75%;
@@ -261,7 +261,7 @@
 
 .v14_0 {
   width: 335px;
-  height: 222px;
+  height: 170px;
   background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
   
   position: absolute;
@@ -275,11 +275,10 @@
 
 .v52_14 {
   width: 335px;
-  height: 317px;
+  height: 246px;
   background: linear-gradient(90deg,rgba(31,64,55,1), rgba(31,64,55,1));
-  
   position: absolute;
-  top: 405px;
+  top: 363px;
   left: 12px;
   border-radius: 10px;
   overflow: hidden;
