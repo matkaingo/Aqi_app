@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <script type="text/javascript" src="js/dist/Chart.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
    </head>
 <body>
 
@@ -137,9 +138,10 @@
           <div class="v2_21" id="cantidad_aqi1"><span class="v2_22" id="Aqi11">103</span></div>
        </div>
 
-        <canvas class="v14_0" id = "grafica">
-          
-        </canvas>
+       <div class="v14_0" id="btn1">
+        <span id="daticos"  Style="Display:none;">HOLI</span>
+        <canvas id = "myChart"></canvas>
+       </div>
         <div class="v52_14">
           <span class="v53_291" id="mensaje"></span>
           <span class="v53_292" id="recomendacion"></span>
@@ -279,6 +281,32 @@
       </img>
       </div>
     </section>
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
+<script>
+  var ctx= document.getElementById("myChart").getContext("2d");
+  var myChart= new Chart(ctx,{
+      type:"line",
+      data:{
+          labels:['col1','col2','col3'],
+          datasets:[{
+                  label:'Num datos',
+                  data:[10,9,15],
+                  backgroundColor:[
+                      'rgb(66, 134, 244,0.5)',
+                      'rgb(74, 135, 72,0.5)',
+                      'rgb(229, 89, 50,0.5)'
+                  ]
+          }]
+      },
+      options:{
+          scales:{
+              yAxes:[{
+                      ticks:{
+                          beginAtZero:true
+                      }
+              }]
+          }
+      }
+  });
+</script>
 </html>
