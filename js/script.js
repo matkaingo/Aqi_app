@@ -1,4 +1,3 @@
-
 var splash, mainPage, mainPage2,contact,tutorial;
 var section;
 var ret, ret1, ret2, ret3, ret4, ret5, retbackup;
