@@ -1,7 +1,7 @@
 # AQI
 Aqi es una app que muestra la calidad del aire y recomendaciones a afrontar en esta calidad.
 
-##Tech
+#Tech
 
 -[Figma] - aplicación de diseño de interfaz de usuario y edición de gráficos basada en la web
 
@@ -27,7 +27,7 @@ npm install --save-dev gulp-concat
 npm install --save-dev gulp-uglify-es
 ```
 
-##Desarrollo
+#Desarrollo
 Si deseas automatizar la minificación del js y el sass:
 
 ```
