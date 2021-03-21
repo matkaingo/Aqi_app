@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" ></html>
+   <head>
+        <meta charset="UTF-8">
+        <title>Aqi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <script type="text/javascript" src="js/dist/Chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+        
+   </head>
+<body>
+
+    <section id="splash" >
+    <div class="loading-wrapper">
+      <div class="loader one"></div>
+      <div class="loader two"></div>
+      <div class="loader three"></div>
+      <div class="loader four"></div>
+      <div class="loader five"></div>
+    </div>
+  </section>
+
+    <section id="mainPage" class="ocultar">
+      
+         <div class="v2_0" id="btn">
+            <div class="v2_7">
+               <div class="v2_8"></div>
+               <div class="v2_9"></div>
+               <div class="v2_10"></div>
+            </div>
+            <div class="v2_11">
+               <span class="v2_12" id="fecha"></span>
+               <div class="v2_13">
+                <span class="location">
+                  <img src="img/Vector.png"></img>
+                </span>
+                <span class="cloud" >
+                  <img src="img/green.png" id="nube"></img>
+                </span>
+                <span class="v2_14" id="barrio1">Medellin, Antioquia</span>
+
+                <span class="v2_15" >AQI</span>
+
+                
+              </div>
+
+            </div>
+            <div class="v2_21" id="cantidad_aqi"><span class="v2_22" id="Aqi1">95</span></div>
+         </div>
+         <div class="v28_0" id="btn10">
+            <span class="v28_2">Quienes Somos</span>
+
+         </div>
+         <div class="v28_1" id="btn11">
+          <span class="v28_3"> Que es Aqi y como funciona </span>
+        </div>
+         <a href="javascript:void(0);">
+            <div class="v5_0" id="btn12">
+              <span class="v32_2" id="barrio2">Conquistadores</span>
+              <span class="v32_3">AQI</span>
+              <span class="v32_4" id="Aqi2">30</span>
+            </div>
+            <div class="v5_1" id="btn2">
+              <span class="v32_5" id="Aqi3">30</span>
+              <span class="v32_13">AQI</span>
+              <span class="v32_21" id="barrio3">Conquistadores</span>
+            </div>
+            <div class="v5_2" id="btn3">
+              <span class="v32_6" id="Aqi4">30</span>
+              <span class="v32_14">AQI</span>
+              <span class="v32_22" id="barrio4">Conquistadores</span>
+            </div>
+            <div class="v23_2" id="btn4">
+              <span class="v32_7" id="Aqi5">30</span>
+              <span class="v32_15">AQI</span>
+              <span class="v32_23" id="barrio5">Conquistadores</span>
+            </div>
+            <div class="v23_3" id="btn5">
+              <span class="v32_8" id="Aqi6">30</span>
+              <span class="v32_16">AQI</span>
+              <span class="v32_24" id="barrio6">Conquistadores</span>
+            </div>
+            <div class="v23_4" id="btn6">
+              <span class="v32_9" id="Aqi7">30</span>
+              <span class="v32_17">AQI</span>
+              <span class="v32_25" id="barrio7">Conquistadores</span>
+            </div>
+            <div class="v23_5" id="btn7">
+              <span class="v32_10" id="Aqi8">30</span>
+              <span class="v32_18">AQI</span>
+              <span class="v32_26" id="barrio8">Conquistadores</span>
+            </div>
+            <div class="v23_6" id="btn8">
+              <span class="v32_11" id="Aqi9">30</span>
+              <span class="v32_19">AQI</span>
+              <span class="v32_27" id="barrio9">Conquistadores</span>
+            </div>
+            <div class="v23_7" id="btn9">
+              <span class="v32_12" id="Aqi10">30</span>
+              <span class="v32_20">AQI</span>
+              <span class="v32_28" id="barrio10">Conquistadores</span>
+            </div>
+
+         </a>
+
+    </section>
+
+    <section id="mainPage2" class="ocultar">
+        <span class="atras" id="ret">
+          <img src="img/arrow_back.png"></img>
+        </span>
+
+        <div class="v2_01" id="btn13">
+          <div class="v2_7">
+             <div class="v2_8"></div>
+             <div class="v2_9"></div>
+             <div class="v2_10"></div>
+          </div>
+          <div class="v2_11">
+             <span class="v2_12" id="fecha_1"></span>
+             <div class="v2_13">
+              <span class="location">
+                <img src="img/Vector.png"></img>
+              </span>
+              <span class="cloud" >
+                <img src="img/green.png" id="nube1"></img>
+              </span>
+              <span class="v2_14" id="barrio11">Medellin, Antioquia</span>
+
+              <span class="v2_15">AQI</span>
+
+              
+            </div>
+
+          </div>
+          <div class="v2_21" id="cantidad_aqi1"><span class="v2_22" id="Aqi11">103</span></div>
+       </div>
+
+       <div class="v14_0" id="btn1">
+        <span id="daticos"  Style="Display:none;">HOLI</span>
+        <canvas id = "myChart"></canvas>
+       </div>
+        <div class="v52_14">
+          <span class="v53_291" id="mensaje"></span>
+          <span class="v53_292" id="recomendacion"></span>
+        </div>
+      
+    </section>
+
+    <section id="contact" class="ocultar">
+     <span class="atras" id="ret1"><img src="img/arrow_back.png"></img></span>
+
+        <div class="v40_3">
+          <div class="fotomanjarrez"><img src="img/manjarrez.png"></img></div>
+          <div class="fotogomez"><img src="img/gomez.png"></img></div>
+          <span class="developers"></span>
+          <span class="nombregomez">Mateo Gómez Rios</span>
+          <span class="nombremanjarez">Mateo Manjarrez Buitrago</span>
+          <span class="textomanjarrez">Estudiante de ingenieria de sistemas en la Universidad Pontificia Bolivariana</span>
+          <span class="textogomez">Estudiante de ingenieria de sistemas en la Universidad Pontificia Bolivariana</span>
+          <div class="bookmark1" href="https://www.upb.edu.co/es/home"><img src="img/Bookmark.png"></img></div>
+          <div class="bookmark2" href="https://www.upb.edu.co/es/home"><img src="img/Bookmark.png"></img></div>
+
+
+        </div>
+        <div class="framemail">
+          <span class="contactus">Contactanos en:</span>
+          <span class="mail">matkaingo@gmail.com</span>
+          <div class="naturaleza"><img src="img/Nature Care.png"></img></div>
+          <div class="nature"><img src="img/nature.png"></img></div>
+      </div>
+      <span class="contactus">Contactanos en:</span>
+          <span class="mail">
+          <a href="matkaingo@gmail.com">matkaingo@gmail.com</a>
+        </span>
+          <div class="naturaleza"><img src="img/Nature Care.png"></img></div>
+          <div class="nature"><img src="img/nature.png"></img></div>
+    </section>
+
+
+<section id="tutorial" class="ocultar">
+      <div class="v59_2">
+        
+        <span class="atras" id="ret3">
+          <img src="img/arrow_back.png"></img>
+      </span>
+
+      <img src="img/back2.png">
+        <span class="v73_3">¿Què es el AQI?</span>
+        <span class="v73_4">El AQI de EE. UU. Es el índice de la EPA para informar la calidad del aire.</span>
+
+
+      </img>
+          <span class="framearrow" id="next">
+          <img src="img/down.png"></img>
+      </span>
+  </div>
+    </section>
+
+
+    <section id="tutorial1" class="ocultar">
+
+      <div class="v59_2">
+        <span class="atras" id="ret2">
+          <img src="img/arrow_back.png"></img>
+      </span>
+      <img src="img/back1.png">
+
+        <span class="v60_2">Imagínese que el AQI es una regla que va de 0 a 500. Cuanto más alto es el valor del AQI, mayor es el nivel de contaminación atmosférica y mayor la preocupación para la salud. Por ejemplo, un valor del AQI de 50 representa buena calidad atmosférica con escaso potencial para afectar a la salud pública, pero un valor del AQI superior a 300 representa una calidad atmosférica peligrosa.
+
+        </span><span class="v60_1">¿Cómo funciona el AQI?</span>
+
+
+
+  
+
+        </img>
+          <span class="framearrow" id="next1">
+          <img src="img/down.png"></img>
+      </span>
+
+        </div>
+        
+
+    </section>
+
+    
+
+    <section id="tutorial2" class="ocultar">
+            <div class="v59_2">
+        <span class="atras" id="ret4">
+          <img src="img/arrow_back.png"></img>
+      </span>
+      <img src="img/back1.png">
+
+        <span class="v60_2">A fin de facilitar su interpretación, el AQI se divide en seis categorías. Cada categoría se corresponde con un nivel diferente de preocupación para la salud. La EPA ha asignado un color específico a cada categoría del AQI para ayudar a las personas a interpretar rápidamente si la contaminación del aire está llegando a niveles insalubres en sus comunidades.
+
+        </span><span class="v60_1">¿Cómo funciona el AQI?</span>
+
+
+
+  
+
+        </img>
+                <span class="framearrow" id="next2">
+          <img src="img/down.png"></img>
+        </span>
+
+        </div>
+    </section>
+
+    <section id="tutorial3" class="ocultar">
+      <div class="v59_2">
+        <span class="atras" id="ret5">
+          <img src="img/arrow_back.png"></img>
+      </span>
+       
+
+
+      <img src="img/back3.png">
+
+        <span class="v60_1">Representación de las categorias</span>
+          <div class="framesito">
+            <span class="nubegrande"><img src="img/vgrande.png"></img></span>
+            <span class="nubegrande2"><img src="img/agrande.png"></img></span>
+            <span class="nubegrande"><img src="img/ngrande.png"></img></span>
+            <span class="nubegrande2"><img src="img/rgrande.png"></img></span>
+            <span class="nubegrande2"><img src="img/mogrande.png"></img></span>
+            <span class="nubegrande2"><img src="img/ggrande.png"></img></span>
+
+            <span class="v50_2">Buena</span>
+            <span class="v50_4">Moderada</span>
+            <span class="v50_6">Dañina a algunos grupos</span>
+            <span class="v50_9">Dañina</span>
+            <span class="v50_12">Muy Dañina</span>
+            <span class="v50_14">Peligrosa</span>
+
+          </div>
+      
+      </img>
+          <span class="framearrow" id="next3">
+          <img src="img/down.png"></img>
+      </span>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+<script>
+  var ctx= document.getElementById("myChart").getContext("2d");
+  var myChart= new Chart(ctx,{
+      type:"line",
+      data:{
+          labels:['col1','col2','col3'],
+          datasets:[{
+                  label:'Num datos',
+                  data:[10,9,15],
+                  backgroundColor:[
+                      'rgb(66, 134, 244,0.5)',
+                      'rgb(74, 135, 72,0.5)',
+                      'rgb(229, 89, 50,0.5)'
+                  ]
+          }]
+      },
+      options:{
+          scales:{
+              yAxes:[{
+                      ticks:{
+                          beginAtZero:true
+                      }
+              }]
+          }
+      }
+  });
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

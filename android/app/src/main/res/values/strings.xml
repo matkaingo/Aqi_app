@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AQI</string>
+    <string name="title_activity_main">AQI</string>
+    <string name="package_name">com.edu.upb.AQI</string>
+    <string name="custom_url_scheme">com.edu.upb.AQI</string>
+</resources>
